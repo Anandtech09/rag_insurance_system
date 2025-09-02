@@ -1,0 +1,357 @@
+
+================================================================================
+TESTING INSURANCE RAG SYSTEM
+================================================================================
+
+System Statistics:
+- Total chunks: 158
+- Documents directory: ./documents
+- Documents: 
+
+================================================================================
+QUERY 1: What is the difference in deductibles between in-network and out-of-network services?
+================================================================================
+
+Query Type: COMPARATIVE
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+Based on the provided context, the difference in deductibles between in-network and out-of-network services is not explicitly stated. The context mentions that "You will pay less if you use a provider in the plan’s network" [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: What is not included in], which implies that there may be a difference in costs, potentially including deductibles, between in-network and out-of-network services. However, the specific details about deductibles are not provided.
+
+The context does mention that "Copayments for certain services... don't count toward the out-of-pocket limit" [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: What is not included in], but it does not provide information on how deductibles are structured for in-network versus out-of-network services.
+
+To determine the difference in deductibles, one would need to consult additional sections of the document or other relevant sources, which are not provided in the given context. Therefore, based on the available information, it is not possible to provide a detailed comparison of deductibles between in-network and out-of-network services. [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: What is not included in] only provides general information about the plan's network and out-of-pocket limits, without specifying the deductible amounts for in-network and out-of-network services.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: | What is not included in                                                                                                                                         |                                                                                                                                                               |                                                                                                                                                         |        | Copayments for certain services,     |                                      |        |]
+
+================================================================================
+QUERY 2: How much would I pay for a specialist visit before and after meeting my deductible?
+================================================================================
+
+Query Type: SPECIFIC
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+To determine how much you would pay for a specialist visit before and after meeting your deductible, we need to consider the information provided in the sources regarding the deductible amount, the cost-sharing structure for specialist visits, and any applicable copays or coinsurance rates.
+
+Unfortunately, the provided sources do not explicitly mention the deductible amount [Source 1: CMS_Sample_Summary_Benefits_Template, Page 1, Section: Plans use the term in-network, preferred, or participating providers]. However, we can find information on the cost-sharing structure for specialist visits.
+
+According to [Source 6: CMS_Sample_Summary_Benefits_Template, Page 4, Section: If You Use a Participating Provider], for specialist visits, you would pay a "$35 copay/office visit and 20% coinsurance" if you use a participating provider. This implies that after meeting your deductible (the amount of which is not specified in the provided sources), you would pay $35 plus 20% of the remaining cost for a specialist visit.
+
+Before meeting your deductible, the exact amount you would pay for a specialist visit cannot be determined from the provided sources because the deductible amount is not specified [Source 1: CMS_Sample_Summary_Benefits_Template, Page 1, Section: Plans use the term in-network, preferred, or participating providers]. Typically, before meeting the deductible, you would be responsible for paying the full cost of the visit, but without the deductible amount, we cannot calculate this precisely.
+
+In summary, after meeting your deductible, you would pay $35 plus 20% coinsurance for a specialist visit [Source 6: CMS_Sample_Summary_Benefits_Template, Page 4, Section: If You Use a Participating Provider]. Before meeting your deductible, the cost cannot be determined due to the lack of information on the deductible amount in the provided sources.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 1, Section: Plans use the term in-network, preferred, or
+network of providers?
+participating providers.]
+- [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1, Section: Plans use the term in-network, preferred, or       |                                                                                              |    |
+|                         |                          |    |                                   |                                  |    | participating for providers in their network.]
+- [Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: Check with your provider before you get services.]
+... and 4 more sources
+
+================================================================================
+QUERY 3: What preventive care services are covered at no cost?
+================================================================================
+
+Query Type: SPECIFIC
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+Based on the provided sources, preventive care services are covered at no cost, but the specific details of these services are not explicitly listed in the sources. However, it can be inferred that preventive care services, such as screenings and immunizations, are covered without any additional cost to the patient.
+
+This inference is supported by [Source 6: CMS_Sample_Summary_Benefits_Template, Page 2, Section: Preventive care/screening/immunization], which mentions "Preventive care/screening/immunization" but does not provide further details on the specific services covered.
+
+Additionally, [Source 8: CMS_Sample_Summary_Benefits_Template, Page 4, Section: Dental check-up] lists "No Charge" for a dental check-up, implying that some preventive care services may be covered at no cost.
+
+However, the sources do not provide a comprehensive list of preventive care services that are covered at no cost. Therefore, the specific preventive care services covered at no cost are not available in the provided sources.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services  |
+|                          |                        |        |                                    |                              |        |                        |                         |        |                 |                         |        |]
+- [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: If you don't get |                                                |
+|                          |                        |        |                                    |                              |        |                        |                         |        |                 |                         |        | preauthorization, benefits could be reduced by |                                                |
+|                          |                        |        |                                    |                              |        |                        |                         |        |                 |                         |]
+- [Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: | If you need immediate    |                        |        | Emergency room care                |                              |        | 20% coinsurance        |                         |        | 20% coinsurance |                         |]
+... and 5 more sources
+
+================================================================================
+QUERY 4: Compare the coverage for emergency room visits vs urgent care visits
+================================================================================
+
+Query Type: COMPARATIVE
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+Based on the provided context, we can compare the coverage for emergency room visits vs urgent care visits as follows:
+
+* Coverage for emergency room visits: The context does not provide specific details on the coverage for emergency room visits. However, it mentions that a smaller number indicates more coverage [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services]. This suggests that the plan may have a copayment or coinsurance for emergency room visits, but the exact amount is not specified.
+* Coverage for urgent care visits: Similarly, the context does not provide specific details on the coverage for urgent care visits. However, it implies that the plan provides some level of coverage for urgent care services, as it mentions "Services" in general [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services].
+
+Comparison:
+Since the context does not provide specific details on the coverage for emergency room visits and urgent care visits, a direct comparison cannot be made. However, we can infer that the plan likely has different coverage levels for emergency room visits and urgent care visits, given the distinction between the two types of services.
+
+It is essential to note that the information provided is limited, and a comprehensive comparison would require more detailed information on the plan's benefits and coverage levels. Specifically, the context does not mention the copayment or coinsurance amounts, deductibles, or any limitations on the number of visits covered.
+
+In conclusion, while we can infer that the plan provides some level of coverage for both emergency room visits and urgent care visits, the exact details of the coverage are not specified in the provided context. To make a more informed comparison, additional information would be necessary [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services].
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+
+================================================================================
+QUERY 5: What is the coinsurance for mental health services (both inpatient and outpatient)?
+================================================================================
+
+Query Type: GENERAL
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+To determine the coinsurance for mental health services, both inpatient and outpatient, we need to analyze the provided sources. Unfortunately, the sources do not explicitly mention the coinsurance for mental health services. 
+
+However, [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 5, Section: In this example, Peg would pay: In this example, Joe would pay: In this example, Mia would pay:] provides information on the cost-sharing structure, including deductibles, copayments, and coinsurance for certain individuals. The coinsurance amounts mentioned are $2,300 for Peg, $300 for Joe, and $300 for Mia. But it does not specify the services these coinsurance amounts apply to.
+
+[Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: If you don't get |                                                |] mentions that if preauthorization is not obtained, benefits could be reduced by 50% of the total cost of the service. This suggests a potential coinsurance rate of 50% for certain services if preauthorization requirements are not met. However, this is not explicitly stated to apply to mental health services.
+
+[Source 4: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: | None   | Services):] does not provide any relevant information regarding the coinsurance for mental health services.
+
+Given the information provided in the sources, it is not possible to determine the exact coinsurance rate for mental health services, both inpatient and outpatient, as this specific detail is not covered in the context of the provided documents. The sources lack explicit information linking the coinsurance rates to mental health services, making it impossible to provide a definitive answer based on the available data. 
+
+In summary, while the sources provide some information on cost-sharing structures and potential penalties for not obtaining preauthorization, they do not specifically address the coinsurance rates for mental health services. Therefore, the coinsurance for mental health services remains unclear based on the provided context.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+- [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 5, Section: In this example, Peg would pay: In this example, Joe would pay: In this example, Mia would pay:
+Cost Sharing Cost Sharing Cost Sharing
+Deductibles $500 Deductibles* $800 Deductibles* $700
+Copayments $300 Copayments $1,200 Copayments $50
+Coinsurance $2,300 Coinsurance $300 Coinsurance $300
+What isn’t covered What isn’t covered What isn’t covered
+Limits or exclusions $60 Limits or exclusions $60 Limits or exclusions $0
+The total Peg would pay is $3,160 The total Joe would pay is $2,360 The total Mia would pay is]
+- [Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: If you don't get |                                                |
+|                          |                        |        |                                    |                              |        |                        |                         |        |                 |                         |        | preauthorization, benefits could be reduced by |                                                |
+|                          |                        |        |                                    |                              |        |                        |                         |        |                 |                         |]
+... and 1 more sources
+
+================================================================================
+QUERY 6: How many physical therapy visits are covered per year and what's the cost?
+================================================================================
+
+Query Type: SPECIFIC
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+According to the provided sources, the number of physical therapy visits covered per year is 60 visits/year, with a 40% coinsurance [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: | 40% coinsurance         |    | 60 visits/year]. 
+
+However, the exact cost per visit is not explicitly stated in the sources. The sources provide information on the total cost-sharing amounts, including deductibles, copayments, and coinsurance, but do not specify the cost per physical therapy visit [Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 5, Section: In this example, Peg would pay: ...]. 
+
+Therefore, while we can determine the number of covered visits, the cost per visit cannot be precisely calculated with the given information.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: | 40% coinsurance         |    | 60 visits/year.]
+- [Source 2: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+- [Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 5, Section: In this example, Peg would pay: In this example, Joe would pay: In this example, Mia would pay:
+Cost Sharing Cost Sharing Cost Sharing
+Deductibles $500 Deductibles* $800 Deductibles* $700
+Copayments $300 Copayments $1,200 Copayments $50
+Coinsurance $2,300 Coinsurance $300 Coinsurance $300
+What isn’t covered What isn’t covered What isn’t covered
+Limits or exclusions $60 Limits or exclusions $60 Limits or exclusions $0
+The total Peg would pay is $3,160 The total Joe would pay is $2,360 The total Mia would pay is]
+
+================================================================================
+QUERY 7: What prescription drug tiers are available and what are the copays for each?
+================================================================================
+
+Query Type: SPECIFIC
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+The prescription drug tiers available and their corresponding copays are as follows: 
+
+1. Generic drugs: $10 copay [Source 6: CMS_Sample_Summary_Benefits_Template, Page 3, Section: prescription (retail and mail order)].
+2. The copay for other tiers is not explicitly mentioned in the provided sources. However, it is mentioned that there is a 40% coinsurance for certain prescriptions [Source 6: CMS_Sample_Summary_Benefits_Template, Page 3, Section: prescription (retail and mail order)], but the specific tier for this coinsurance is not specified.
+
+Additionally, the deductible for prescription drugs is $300 [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: See a list of covered preventive services] and [Source 3: CMS_Sample_Summary_Benefits_Template, Page 1, Section: See the chart starting on page 2]. 
+
+It is also mentioned that the plan covers up to a 30-day supply for retail prescriptions and 31-90 day supply for mail-order prescriptions [Source 6: CMS_Sample_Summary_Benefits_Template, Page 3, Section: prescription (retail and mail order)]. 
+
+The information about other prescription drug tiers and their copays is not available in the provided sources.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+- [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: See a list of covered             |    |
+|                                                                                                                                                                 |                                                                                                                                                               |                                                                                                                                                         |        |                                      |                                      |        |                                                                                                     | preventive services at https://www.healthcare.gov/coverage/preventive-care-benefits/.                |    |
+| Are there other                                                                                                                                                 |                                                                                                                                                               |                                                                                                                                                         |        | Yes.]
+- [Source 3: CMS_Sample_Summary_Benefits_Template, Page 1, Section: See the chart starting on page 2 for how |    |
+|                         |                          |    |                                   | Doesn’t apply to preventive care |    |                                                                                               | much you pay for covered services after you meet the deductible.]
+... and 3 more sources
+
+================================================================================
+QUERY 8: Is there coverage for childbirth and what are the associated costs?
+================================================================================
+
+Query Type: SPECIFIC
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+Based on the provided sources, there is no explicit information about coverage for childbirth. The sources discuss general information about services, costs, and coverage, but do not specifically mention childbirth [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services]. 
+
+However, it is mentioned that the care received for a condition could be different based on various factors, including the doctor's advice and the seriousness of the condition [Source 2: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Are there other costs I should consider when comparing plans?]. This implies that the costs and coverage for childbirth, if available, would depend on individual circumstances and the specific terms of the insurance plan.
+
+Regarding associated costs, the sources mention that out-of-pocket expenses are based on treating a condition, and the premium paid can affect these expenses [Source 2: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Are there other costs I should consider when comparing plans?]. Specifically, it is stated that "Generally, the lower your premium, the more you’ll pay in out-of-pocket" [Source 2: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Are there other costs I should consider when comparing plans?]. However, the exact costs associated with childbirth are not provided in the sources. 
+
+In summary, the information about coverage for childbirth and its associated costs is not available in the provided sources.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+- [Source 2: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Are there other costs I should
+All services and treatments started and  consider when comparing
+No. Treatments shown are just examples.
+ended in the same coverage period.
+plans?]
+
+================================================================================
+QUERY 9: What services require preauthorization and what happens if I don't get it?
+================================================================================
+
+Query Type: GENERAL
+Confidence Score: 0.66
+
+ANSWER:
+--------------------------------------------------
+Based on the provided context, preauthorization is required for several services, including skilled nursing care, durable medical equipment, and hospice services [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: If you need help]. Additionally, preauthorization is required for other services, although the specific services are not detailed in the provided context [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: | 40% coinsurance |, Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: | 40% coinsurance |, Source 4: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: |                              |        | 20% coinsurance        |].
+
+If preauthorization is not obtained, the consequences are not fully detailed in the provided context. However, it is mentioned that "If you don't get" preauthorization, implying that there may be negative consequences, such as reduced or denied coverage [Source 4: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: |                              |        | 20% coinsurance        |, Source 5: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: |        |]. Unfortunately, the exact consequences of not obtaining preauthorization are not specified in the provided context.
+
+It is also worth noting that the provided context does not cover all possible services that may require preauthorization. For example, vehicle modifications, home modifications, exercise, and bathroom equipment are excluded from the skilled nursing care and durable medical equipment sections [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: If you need help], but it is unclear if preauthorization is required for these services or if they are covered under a different section.
+
+In summary, preauthorization is required for several services, including skilled nursing care, durable medical equipment, and hospice services [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: If you need help, Source 5: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: |        |]. However, the consequences of not obtaining preauthorization and the specific services that require preauthorization are not fully detailed in the provided context [Source 4: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: |                              |        | 20% coinsurance        |, Source 5: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: |        |].
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 3, Section: If you need help Skilled nursing care 20% coinsurance 40% coinsurance 60 visits/calendar year
+recovering or have Excludes vehicle modifications, home
+other special health Durable medical equipment 20% coinsurance 40% coinsurance modifications, exercise, and bathroom
+needs equipment.]
+- [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: | 40% coinsurance |                         |]
+- [Source 3: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: | 40% coinsurance |                         |]
+... and 2 more sources
+
+================================================================================
+QUERY 10: What is the out-of-pocket maximum for in-network vs out-of-network care?
+================================================================================
+
+Query Type: COMPARATIVE
+Confidence Score: 0.66
+
+ANSWER:
+--------------------------------------------------
+To compare the out-of-pocket maximum for in-network vs out-of-network care based on the provided context, we need to analyze the information given in Source 1 and Source 2.
+
+According to [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: family members in this plan], the out-of-pocket maximum for in-network care is $5,000 for an individual and $5,000 for a family. However, for out-of-network providers, the out-of-pocket maximum is $4,000 for an individual and $8,000 for a family [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: individual / $5,000 family; for out-of-network providers $4,000].
+
+In contrast, [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1, Section: usually one] provides different out-of-pocket maximums. For in-network care, the out-of-pocket limit is $2,500 for an individual and $5,000 for a family [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1, Section: $2,500 person / $5,000]. For non-participating (out-of-network) providers, the out-of-pocket limit is $4,000 for an individual and $8,000 for a family [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1, Section: $4,000 person / $8,000 family].
+
+Comparing the two sources, we can see that:
+- The in-network out-of-pocket maximum for an individual is $5,000 in [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1] and $2,500 in [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1].
+- The in-network out-of-pocket maximum for a family is $5,000 in both [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1] and [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1].
+- The out-of-network out-of-pocket maximum for an individual is $4,000 in both [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1] and [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1].
+- The out-of-network out-of-pocket maximum for a family is $8,000 in both [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1] and [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1].
+
+In summary, while there is a discrepancy in the in-network out-of-pocket maximum for individuals between the two sources, the out-of-network out-of-pocket maximums for both individuals and families are consistent across [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1] and [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1].
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Completed_Summary_Benefits_Coverage, Page 1, Section: |                                                                                                                                                               |                                                                                                                                                         |        |                                      |                                      |        | family members in this plan, they have to meet their own out-of-pocket limits until the overall     |                                                                                                      |    |
+|                                                                                                                                                                 |                                                                                                                                                               |                                                                                                                                                         |]
+- [Source 2: CMS_Sample_Summary_Benefits_Template, Page 1, Section: usually one       |                                                                                              |    |
+| pocket limit on my      |                          |    | $2,500 person / $5,000            |                                  |    | year) for your share of the cost of covered services.]
+
+================================================================================
+QUERY 11: Which plan has better coverage for diagnostic imaging (MRI, CT scans)?
+================================================================================
+
+Query Type: COMPARATIVE
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+To compare the coverage for diagnostic imaging (MRI, CT scans) between the two plans, we need to examine the details provided in the sources.
+
+From [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services], it is mentioned that "the smaller the number, the more coverage the plan provides." However, this statement is quite general and does not specifically address diagnostic imaging services like MRI or CT scans. There is no explicit information provided about the coverage for these services in Source 1.
+
+On the other hand, [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services immunization you need are preventive] mentions "No charge 40% coinsurance." Although this information seems to pertain to immunizations, it implies that there might be a coinsurance structure for certain services. Unfortunately, there is no direct mention of diagnostic imaging services like MRI or CT scans in Source 2 either.
+
+Given the lack of specific information regarding diagnostic imaging services in both sources, it's challenging to make a direct comparison of the coverage for MRI, CT scans between the two plans. The details necessary for such a comparison, such as specific coinsurance rates, copays, or any limitations on these services, are not provided in the context.
+
+Therefore, based on the information available, it's not possible to determine which plan has better coverage for diagnostic imaging (MRI, CT scans) as the specific details regarding these services are missing from both [Source 1: CMS_Sample_Summary_Benefits_Template] and [Source 2: CMS_Completed_Summary_Benefits_Coverage].
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+- [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services
+No charge 40% coinsurance
+immunization you need are preventive.]
+
+================================================================================
+QUERY 12: Compare the prescription drug coverage between the plans
+================================================================================
+
+Query Type: COMPARATIVE
+Confidence Score: 0.65
+
+ANSWER:
+--------------------------------------------------
+To compare the prescription drug coverage between the plans, we must analyze the provided context from both sources.
+
+From [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services], it is mentioned that the plan provides coverage, but the specifics of the prescription drug coverage are not detailed. However, it does imply that the plan covers certain services, which could potentially include prescription drugs, given the general nature of the statement. The section also mentions "the smaller that number, the more coverage the plan provides," which suggests a tiered system for coverage but does not explicitly state how this applies to prescription drugs [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services].
+
+On the other hand, [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services immunization you need are preventive] provides more specific information regarding costs associated with certain services, mentioning "No charge" and "40% coinsurance." While this source does discuss costs, it does not explicitly mention prescription drug coverage. The mention of "No charge" and "40% coinsurance" could imply a cost-sharing structure for covered services, but without explicit reference to prescription drugs, it's unclear how these costs apply to drug coverage [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services immunization you need are preventive].
+
+Given the information provided, a detailed comparison of prescription drug coverage between the two plans is challenging due to the lack of explicit details on this topic in both sources. [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: Services] hints at a coverage system but does not specify how it applies to prescription drugs, while [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services immunization you need are preventive] discusses cost structures for unspecified services, not directly addressing prescription drug coverage.
+
+In conclusion, due to the missing specific information regarding prescription drug coverage in both sources, a comprehensive comparison cannot be accurately made. Further details from the plans are necessary to evaluate and compare their prescription drug coverage effectively.
+
+SOURCES:
+--------------------------------------------------
+- [Source 1: CMS_Sample_Summary_Benefits_Template, Page 8, Section: smaller that number, the more coverage
+Services, and aren’t specific to a
+the plan provides.]
+- [Source 2: CMS_Completed_Summary_Benefits_Coverage, Page 2, Section: Ask your provider if the services
+No charge 40% coinsurance
+immunization you need are preventive.]
+
+================================================================================
+EVALUATION COMPLETED
+================================================================================
