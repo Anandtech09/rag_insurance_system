@@ -17,8 +17,8 @@ A Retrieval-Augmented Generation (RAG) system for analyzing multiple insurance p
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository_url>
-cd insurance-rag-system
+git clone https://github.com/Anandtech09/rag_insurance_system.git
+cd rag_insurance_system
 ```
 
 ### 2. Run the Setup Script
@@ -87,12 +87,12 @@ Set PYTHONPATH for module imports:
 
 **Windows:**
 ```bash
-set PYTHONPATH=%PYTHONPATH%;C:\path\to\insurance-rag-system
+set PYTHONPATH=%PYTHONPATH%;C:\path\to\rag_insurance_system
 ```
 
 **Linux/macOS:**
 ```bash
-export PYTHONPATH=$PYTHONPATH:/path/to/insurance-rag-system
+export PYTHONPATH=$PYTHONPATH:/path/to/rag_insurance_system
 ```
 
 ### 5. Run the System
