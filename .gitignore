@@ -3,9 +3,6 @@ __pycache__/
 *.pyc
 venv/
 documents/*.pdf
-chroma_db/
-logs/
 cache/
-*.log
 rag_env/
 evaluation_report_*.json
